@@ -1,0 +1,19 @@
+<table border="1" class="table table-striped">
+    <tr>
+            <td>Nama</td>
+            <td>Alamat</td>
+            <td>Jabatan</td>
+            <td>Tanggal Lhir</td>
+    </tr>
+    {{#each karyawan}}
+    <tr>
+        <td>{{this.nama}}</td>
+        <td>{{this.alamat}}</td>
+        <td>{{this.jabatan}}</td>
+        <td>{{this.tanggalLahir}}</td>
+    </tr>
+    {{/each}}
+    </table>
+
+    <h1>{{user}}</h1>
+    <button onclick="location.href='/'">BACK</button>
